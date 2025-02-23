@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     // Solo instanciamos la calculadora una sola vez y sobre esta constante se estructura la lógica.
     private var calculator = Calculator()
     private var isUserTypingNumber = false
+    private var isUserTypingComma = false
     private var formatter: NumberFormatter {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
@@ -45,13 +46,28 @@ class ViewController: UIViewController {
     
     // MARK: - Button Actions
 
+    @IBAction func commaTouched(_ sender: UIButton) {
+        let commaText = sender.titleLabel?.text ?? ""
+        let currentDisplayText = displayLabel.text ?? ""
+        
+        if !currentDisplayText.contains(","){
+            displayLabel.text = currentDisplayText + commaText
+            isUserTypingComma = true
+        }
+        
+        
+    }
+    
     @IBAction func digitTouched(_ sender: UIButton) {
         let digitText = sender.titleLabel?.text ?? ""
         let currentDisplayText = displayLabel.text ?? ""
         
+        
         // Para ir acumulando los numeros en el diplay
-        if isUserTypingNumber {
+        
+        if isUserTypingNumber || isUserTypingComma {
             displayLabel.text = currentDisplayText + digitText
+            isUserTypingComma = false
         } else {
             displayLabel.text = digitText
             isUserTypingNumber = true
