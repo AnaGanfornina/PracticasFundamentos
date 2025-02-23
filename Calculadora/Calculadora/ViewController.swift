@@ -16,6 +16,32 @@ class ViewController: UIViewController {
     // Solo instanciamos la calculadora una sola vez y sobre esta constante se estructura la lógica.
     private var calculator = Calculator()
     private var isUserTypingNumber = false
+    private var formatter: NumberFormatter {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        return numberFormatter
+    }
+
+    
+    private var displayFormattedValue: Double {
+        // Formateamos de texo a número
+        get {
+            guard let displayText = displayLabel.text,
+                  let formattedNSNumber = formatter.number(from: displayText) else {
+                return .zero
+            }
+            return Double(truncating: formattedNSNumber)
+        }
+        // Formateamos de numero a texto
+        set {
+            displayLabel.text = formatter.string(
+                from: NSNumber(floatLiteral: newValue)
+            )
+        }
+       
+    }
+    
+    
     
     // MARK: - Button Actions
 
@@ -35,15 +61,14 @@ class ViewController: UIViewController {
     
     @IBAction func operatorTouched(_ sender: UIButton) {
         let operatorText = sender.titleLabel?.text ?? ""
-        let displayValueNumber = Double(displayLabel.text ?? "0") ?? .zero
         
         if isUserTypingNumber {
-            calculator.setOperand(displayValueNumber)
+            calculator.setOperand(displayFormattedValue)
             isUserTypingNumber = false
         }
         
         calculator.executeOperation(operatorText)
-        displayLabel.text = "\(String(describing: calculator.result))"
+        displayFormattedValue = calculator.result  ?? .zero
         
     
     }
