@@ -8,23 +8,44 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    // MARK: - UI Components
     @IBOutlet var displayLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
+    // MARK: - Screen State
+    
+    // Solo instanciamos la calculadora una sola vez y sobre esta constante se estructura la lógica.
+    private var calculator = Calculator()
+    private var isUserTypingNumber = false
+    
+    // MARK: - Button Actions
 
     @IBAction func digitTouched(_ sender: UIButton) {
         let digitText = sender.titleLabel?.text ?? ""
-        displayLabel.text  = digitText
+        let currentDisplayText = displayLabel.text ?? ""
+        
+        // Para ir acumulando los numeros en el diplay
+        if isUserTypingNumber {
+            displayLabel.text = currentDisplayText + digitText
+        } else {
+            displayLabel.text = digitText
+            isUserTypingNumber = true
+        }
+        
     }
     
     @IBAction func operatorTouched(_ sender: UIButton) {
         let operatorText = sender.titleLabel?.text ?? ""
-        print(operatorText)
+        let displayValueNumber = Double(displayLabel.text ?? "0") ?? .zero
+        
+        if isUserTypingNumber {
+            calculator.setOperand(displayValueNumber)
+            isUserTypingNumber = false
+        }
+        
+        calculator.executeOperation(operatorText)
+        displayLabel.text = "\(String(describing: calculator.result))"
+        
+    
     }
 }
 
