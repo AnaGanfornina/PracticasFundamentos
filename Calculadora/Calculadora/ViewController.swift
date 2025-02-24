@@ -11,6 +11,8 @@ class ViewController: UIViewController {
     // MARK: - UI Components
     @IBOutlet var displayLabel: UILabel!
     
+    @IBOutlet var galindaImage: UIImageView!
+    
     // MARK: - Screen State
     
     // Solo instanciamos la calculadora una sola vez y sobre esta constante se estructura la lógica.
@@ -94,5 +96,17 @@ class ViewController: UIViewController {
         
     
     }
+    // MARK: - Change position
+    
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        coordinator.animate(alongsideTransition: { context in
+            if UIApplication.shared.statusBarOrientation.isLandscape {
+                self.galindaImage.isHidden = true // Mostrar imagen en vertical
+            } else {
+                self.galindaImage.isHidden = false  // Ocultar imagen en horizontal
+            }
+        })
+    }
+ 
 }
 

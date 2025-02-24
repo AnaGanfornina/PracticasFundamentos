@@ -335,9 +335,13 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dorado.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lth-QI-Dkw">
+                                <rect key="frame" x="43" y="103" width="307" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="1" green="0.65098039220000004" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.95006531476974487" green="0.6261146118423121" blue="0.8592450059320661" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ILT-WL-Wkk" secondAttribute="trailing" constant="20" id="2C7-Dy-Wt9"/>
                             <constraint firstItem="ILT-WL-Wkk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5gm-rl-lS1"/>
@@ -346,14 +350,16 @@
                     </view>
                     <connections>
                         <outlet property="displayLabel" destination="uKI-Oy-J7d" id="BH1-NL-GM0"/>
+                        <outlet property="galindaImage" destination="Lth-QI-Dkw" id="LSk-CF-hSF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="4"/>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrowshape.backward" catalog="system" width="128" height="104"/>
+        <image name="dorado.png" width="307" height="262"/>
     </resources>
 </document>
