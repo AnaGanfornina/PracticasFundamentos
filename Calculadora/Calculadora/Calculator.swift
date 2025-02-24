@@ -14,12 +14,13 @@ struct Calculator {
     private var operators: [String: Operation] = [
         "+": Operation.binaryOperation(+),
         "-": Operation.binaryOperation(-),
-        "x": Operation.binaryOperation(*),
+        "X": Operation.binaryOperation(*),
         "/": Operation.binaryOperation(/),
         "=": Operation.equal
     ]
     
     private var pendingBinaryOperation: PendingBinaryOperation?
+    
     var resultIsPending: Bool {
         pendingBinaryOperation != nil
     }

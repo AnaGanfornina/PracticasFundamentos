@@ -46,16 +46,22 @@ class ViewController: UIViewController {
     
     // MARK: - Button Actions
 
+    @IBAction func clearDisplay(_ sender: UIButton) {
+        // Realizamos un calculo por 0 para que el resultado pendiente para que el resultado pendiente sea 0
+        calculator.setOperand(0)
+        calculator.executeOperation("*")
+        displayFormattedValue = .zero
+    }
+    
     @IBAction func commaTouched(_ sender: UIButton) {
         let commaText = sender.titleLabel?.text ?? ""
         let currentDisplayText = displayLabel.text ?? ""
         
+        // Solo si no hay una coma ya escrita la añadimos
         if !currentDisplayText.contains(","){
             displayLabel.text = currentDisplayText + commaText
             isUserTypingComma = true
         }
-        
-        
     }
     
     @IBAction func digitTouched(_ sender: UIButton) {

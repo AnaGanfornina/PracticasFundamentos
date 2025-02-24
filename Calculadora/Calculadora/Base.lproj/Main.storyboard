@@ -304,6 +304,9 @@
                                                                     </backgroundConfiguration>
                                                                     <color key="baseBackgroundColor" red="0.82745098039999998" green="0.3921568627" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="clearDisplay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X8j-kp-hzV"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="237" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-Ak-uUp">
                                                                 <rect key="frame" x="0.0" y="118" width="79" height="108"/>
