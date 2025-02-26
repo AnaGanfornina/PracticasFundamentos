@@ -11,7 +11,15 @@ class ViewController: UIViewController {
     // MARK: - UI Components
     @IBOutlet var displayLabel: UILabel!
     
+    @IBOutlet var equalButton: UIButton!
+    
     @IBOutlet var galindaImage: UIImageView!
+    
+    // IBCollections para luego cambiarles el color del background
+    @IBOutlet var operationsButtons: [UIButton]! // MARK: Dentro de este grupo también se encuentra el clear
+    @IBOutlet var digitsButtons:[UIButton]! // MARK: Dentro de este grupo también se encuentra la coma
+    
+    
     
     // MARK: - Screen State
     
@@ -101,12 +109,38 @@ class ViewController: UIViewController {
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
         coordinator.animate(alongsideTransition: { context in
             if UIApplication.shared.statusBarOrientation.isLandscape {
+                // Landscape
                 self.galindaImage.isHidden = true // Mostrar imagen en vertical
+                self.equalButton.configuration?.baseBackgroundColor = .elfyGreenEqual
+                
+                for button in self.operationsButtons {
+                    button.configuration?.baseBackgroundColor = .elfyGreenOperation
+                }
+                
+                for button in self.digitsButtons {
+                    button.configuration?.baseBackgroundColor = .elfyGreenDigit
+                }
+                
+
             } else {
+                // Portrait
                 self.galindaImage.isHidden = false  // Ocultar imagen en horizontal
+                
+                self.equalButton.configuration?.baseBackgroundColor = .glindaPinkEqual
+                
+                for button in self.operationsButtons {
+                    button.configuration?.baseBackgroundColor = .glindaPinkOperation
+                }
+                
+                for button in self.digitsButtons {
+                    button.configuration?.baseBackgroundColor = .glindaPinkDigit
+                }
+                // TODO: Revisa el bug de que lo primero con lo que se abra la calculadora sea en horizontal, aparece la imagen ??
+                
+                
+                
             }
         })
     }
- 
 }
 
