@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		A134354D2D6F81AF002E0DD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A134352E2D6F81AD002E0DD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A13435352D6F81AD002E0DD3;
+			remoteInfo = SpotyClone;
+		};
+		A13435572D6F81AF002E0DD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A134352E2D6F81AD002E0DD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A13435352D6F81AD002E0DD3;
+			remoteInfo = SpotyClone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A13435362D6F81AD002E0DD3 /* SpotyClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotyClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A134354C2D6F81AF002E0DD3 /* SpotyCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13435562D6F81AF002E0DD3 /* SpotyCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A134355E2D6F81AF002E0DD3 /* Exceptions for "SpotyClone" folder in "SpotyClone" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A13435352D6F81AD002E0DD3 /* SpotyClone */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A13435382D6F81AD002E0DD3 /* SpotyClone */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A134355E2D6F81AF002E0DD3 /* Exceptions for "SpotyClone" folder in "SpotyClone" target */,
+			);
+			path = SpotyClone;
+			sourceTree = "<group>";
+		};
+		A134354F2D6F81AF002E0DD3 /* SpotyCloneTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SpotyCloneTests;
+			sourceTree = "<group>";
+		};
+		A13435592D6F81AF002E0DD3 /* SpotyCloneUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SpotyCloneUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A13435332D6F81AD002E0DD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13435492D6F81AF002E0DD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13435532D6F81AF002E0DD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A134352D2D6F81AD002E0DD3 = {
+			isa = PBXGroup;
+			children = (
+				A13435382D6F81AD002E0DD3 /* SpotyClone */,
+				A134354F2D6F81AF002E0DD3 /* SpotyCloneTests */,
+				A13435592D6F81AF002E0DD3 /* SpotyCloneUITests */,
+				A13435372D6F81AD002E0DD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A13435372D6F81AD002E0DD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A13435362D6F81AD002E0DD3 /* SpotyClone.app */,
+				A134354C2D6F81AF002E0DD3 /* SpotyCloneTests.xctest */,
+				A13435562D6F81AF002E0DD3 /* SpotyCloneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A13435352D6F81AD002E0DD3 /* SpotyClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A134355F2D6F81AF002E0DD3 /* Build configuration list for PBXNativeTarget "SpotyClone" */;
+			buildPhases = (
+				A13435322D6F81AD002E0DD3 /* Sources */,
+				A13435332D6F81AD002E0DD3 /* Frameworks */,
+				A13435342D6F81AD002E0DD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A13435382D6F81AD002E0DD3 /* SpotyClone */,
+			);
+			name = SpotyClone;
+			packageProductDependencies = (
+			);
+			productName = SpotyClone;
+			productReference = A13435362D6F81AD002E0DD3 /* SpotyClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A134354B2D6F81AF002E0DD3 /* SpotyCloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13435642D6F81AF002E0DD3 /* Build configuration list for PBXNativeTarget "SpotyCloneTests" */;
+			buildPhases = (
+				A13435482D6F81AF002E0DD3 /* Sources */,
+				A13435492D6F81AF002E0DD3 /* Frameworks */,
+				A134354A2D6F81AF002E0DD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A134354E2D6F81AF002E0DD3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A134354F2D6F81AF002E0DD3 /* SpotyCloneTests */,
+			);
+			name = SpotyCloneTests;
+			packageProductDependencies = (
+			);
+			productName = SpotyCloneTests;
+			productReference = A134354C2D6F81AF002E0DD3 /* SpotyCloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A13435552D6F81AF002E0DD3 /* SpotyCloneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13435672D6F81AF002E0DD3 /* Build configuration list for PBXNativeTarget "SpotyCloneUITests" */;
+			buildPhases = (
+				A13435522D6F81AF002E0DD3 /* Sources */,
+				A13435532D6F81AF002E0DD3 /* Frameworks */,
+				A13435542D6F81AF002E0DD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A13435582D6F81AF002E0DD3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A13435592D6F81AF002E0DD3 /* SpotyCloneUITests */,
+			);
+			name = SpotyCloneUITests;
+			packageProductDependencies = (
+			);
+			productName = SpotyCloneUITests;
+			productReference = A13435562D6F81AF002E0DD3 /* SpotyCloneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A134352E2D6F81AD002E0DD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					A13435352D6F81AD002E0DD3 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A134354B2D6F81AF002E0DD3 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A13435352D6F81AD002E0DD3;
+					};
+					A13435552D6F81AF002E0DD3 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A13435352D6F81AD002E0DD3;
+					};
+				};
+			};
+			buildConfigurationList = A13435312D6F81AD002E0DD3 /* Build configuration list for PBXProject "SpotyClone" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A134352D2D6F81AD002E0DD3;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A13435372D6F81AD002E0DD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A13435352D6F81AD002E0DD3 /* SpotyClone */,
+				A134354B2D6F81AF002E0DD3 /* SpotyCloneTests */,
+				A13435552D6F81AF002E0DD3 /* SpotyCloneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A13435342D6F81AD002E0DD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A134354A2D6F81AF002E0DD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13435542D6F81AF002E0DD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A13435322D6F81AD002E0DD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13435482D6F81AF002E0DD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13435522D6F81AF002E0DD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A134354E2D6F81AF002E0DD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A13435352D6F81AD002E0DD3 /* SpotyClone */;
+			targetProxy = A134354D2D6F81AF002E0DD3 /* PBXContainerItemProxy */;
+		};
+		A13435582D6F81AF002E0DD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A13435352D6F81AD002E0DD3 /* SpotyClone */;
+			targetProxy = A13435572D6F81AF002E0DD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A13435602D6F81AF002E0DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DRKH5MTLPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpotyClone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anaganfornina.SpotyClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A13435612D6F81AF002E0DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DRKH5MTLPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpotyClone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anaganfornina.SpotyClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A13435622D6F81AF002E0DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A13435632D6F81AF002E0DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A13435652D6F81AF002E0DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DRKH5MTLPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anaganfornina.SpotyCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpotyClone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpotyClone";
+			};
+			name = Debug;
+		};
+		A13435662D6F81AF002E0DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DRKH5MTLPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anaganfornina.SpotyCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpotyClone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpotyClone";
+			};
+			name = Release;
+		};
+		A13435682D6F81AF002E0DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DRKH5MTLPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anaganfornina.SpotyCloneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpotyClone;
+			};
+			name = Debug;
+		};
+		A13435692D6F81AF002E0DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DRKH5MTLPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anaganfornina.SpotyCloneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpotyClone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A13435312D6F81AD002E0DD3 /* Build configuration list for PBXProject "SpotyClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13435622D6F81AF002E0DD3 /* Debug */,
+				A13435632D6F81AF002E0DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A134355F2D6F81AF002E0DD3 /* Build configuration list for PBXNativeTarget "SpotyClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13435602D6F81AF002E0DD3 /* Debug */,
+				A13435612D6F81AF002E0DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A13435642D6F81AF002E0DD3 /* Build configuration list for PBXNativeTarget "SpotyCloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13435652D6F81AF002E0DD3 /* Debug */,
+				A13435662D6F81AF002E0DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A13435672D6F81AF002E0DD3 /* Build configuration list for PBXNativeTarget "SpotyCloneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13435682D6F81AF002E0DD3 /* Debug */,
+				A13435692D6F81AF002E0DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A134352E2D6F81AD002E0DD3 /* Project object */;
+}
