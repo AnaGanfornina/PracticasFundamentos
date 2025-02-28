@@ -43,6 +43,9 @@
                             <state key="normal" title="Log in">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="logInButtonTapped" destination="-1" eventType="touchUpInside" id="mu0-qS-0PD"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>

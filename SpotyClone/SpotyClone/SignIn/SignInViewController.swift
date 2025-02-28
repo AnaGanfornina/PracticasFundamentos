@@ -24,6 +24,13 @@ final class SignInViewController: UIViewController {
         customizeButtons()
     }
 
+    // MARK: - Button Actions
+    
+    @IBAction func logInButtonTapped() {
+        let logInViewController = LogInViewController()
+        navigationController?.show(logInViewController, sender: self)
+        
+    }
 }
 
 
