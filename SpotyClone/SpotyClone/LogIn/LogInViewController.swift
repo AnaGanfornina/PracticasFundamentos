@@ -22,8 +22,35 @@ final class LogInViewController: UIViewController {
 
         customizeButton()
     }
-
-
+    
+    // MARK: - Button Acction
+    
+    @IBAction func logInButtonTapped() {
+        let mainTabBar = UITabBarController()
+        let searchViewController = UIViewController() // TODO:  Cambaar por los viewControllers cuando los tengas
+        
+        // configuracion del componente del tabBar
+        searchViewController.tabBarItem = UITabBarItem(
+            title: "Search",
+            image: UIImage(systemName:"magnifyingglass"),
+            selectedImage: UIImage(systemName: "sparkle.magnifyingglass"))
+        
+        let playlistViewController = UIViewController() // TODO:  Cambaar por los viewControllers cuando los tengas
+        
+        playlistViewController.tabBarItem = UITabBarItem(
+            title: "Playlist",
+            image: UIImage(systemName: "list.clipboard"),
+            selectedImage: UIImage(systemName: "list.clipboard.fill")
+        )
+        
+        mainTabBar.viewControllers = [
+            searchViewController,
+            playlistViewController
+        ]
+        
+        navigationController?.setViewControllers([mainTabBar], animated: true)
+    }
+    
 }
 
 // MARK: - View Customization
