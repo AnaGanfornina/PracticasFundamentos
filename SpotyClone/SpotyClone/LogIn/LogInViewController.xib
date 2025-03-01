@@ -85,6 +85,9 @@
                                     <rect key="frame" x="230" y="0.0" width="115" height="128"/>
                                 </view>
                             </subviews>
+                            <constraints>
+                                <constraint firstItem="7cA-Hi-VGl" firstAttribute="width" secondItem="XfJ-3d-Lyo" secondAttribute="width" id="4mi-4Q-WfE"/>
+                            </constraints>
                         </stackView>
                     </subviews>
                 </stackView>

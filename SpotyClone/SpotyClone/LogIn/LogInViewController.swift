@@ -27,7 +27,7 @@ final class LogInViewController: UIViewController {
     
     @IBAction func logInButtonTapped() {
         let mainTabBar = UITabBarController()
-        let searchViewController = UIViewController() // TODO:  Cambaar por los viewControllers cuando los tengas
+        let searchViewController = SearchCollectionViewController()
         
         // configuracion del componente del tabBar
         searchViewController.tabBarItem = UITabBarItem(
