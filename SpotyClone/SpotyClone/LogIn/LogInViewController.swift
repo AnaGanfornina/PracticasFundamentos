@@ -35,7 +35,7 @@ final class LogInViewController: UIViewController {
             image: UIImage(systemName:"magnifyingglass"),
             selectedImage: UIImage(systemName: "sparkle.magnifyingglass"))
         
-        let playlistViewController = UIViewController() // TODO:  Cambaar por los viewControllers cuando los tengas
+        let playlistViewController = PlaylistTableViewController()
         
         playlistViewController.tabBarItem = UITabBarItem(
             title: "Playlist",
