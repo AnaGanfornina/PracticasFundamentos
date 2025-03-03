@@ -43,10 +43,21 @@ final class LogInViewController: UIViewController {
             selectedImage: UIImage(systemName: "list.clipboard.fill")
         )
         
+        
+        let playerViewController = PlayerViewController()
+        
+        playerViewController.tabBarItem = UITabBarItem(
+            title: "Player",
+            image: UIImage(systemName: "play.rectangle"),
+            selectedImage: UIImage(systemName: "play.rectangle.fill")
+        )
+        
         mainTabBar.viewControllers = [
             searchViewController,
-            playlistViewController
+            playlistViewController,
+            playerViewController
         ]
+        
         
         navigationController?.setViewControllers([mainTabBar], animated: true)
     }

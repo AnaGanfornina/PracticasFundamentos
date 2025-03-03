@@ -70,10 +70,33 @@ final class PlaylistTableViewController: UITableViewController {
 // MARK: - UITableViewDelegate
 
 extension PlaylistTableViewController {
+    /// Función sobreescrita para dar un tamaño a la celda
     override func tableView(
         _ tableView: UITableView,
         heightForRowAt indexPath: IndexPath
     ) -> CGFloat {
         150
     }
-}
+    
+    ///Función sobreescrita para dar información sobre la celda seleccionaa
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // obtener la celda seleccionada
+        guard let snapshot = dataSource?.snapshot() else { return }
+        
+        let selectedCell = snapshot.itemIdentifiers(inSection: .playlists)[indexPath.row]
+        
+        
+        // instanciar el viewController de destino y Pasar la información al viewControllerDetail
+        
+        let playlistDetailCollectionView = PlaylistDetailCollectionViewController()
+        playlistDetailCollectionView.songs = selectedCell.songs
+        
+        let playerViewController = PlayerViewController()
+        playerViewController.songs = selectedCell.songs
+        
+        // navegar al viewControllerDetail
+        playlistDetailCollectionView.hidesBottomBarWhenPushed = false
+        navigationController?.show(playlistDetailCollectionView, sender: self)
+        }
+    }
+
