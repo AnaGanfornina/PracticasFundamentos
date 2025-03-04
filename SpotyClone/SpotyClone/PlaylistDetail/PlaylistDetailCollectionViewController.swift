@@ -21,12 +21,15 @@ final class PlaylistDetailCollectionViewController: UICollectionViewController {
     // MARK: - Data
     private var dataSource: DataSource?
 
-    var songs: [Song]?
+    
+    private var playlistSelected: Playlist
     
     
     
     // MARK: - Initializer
-    init() {
+    init(playlistSelected: Playlist) {
+        
+        self.playlistSelected = playlistSelected
 
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
@@ -44,12 +47,19 @@ final class PlaylistDetailCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Crear un botón para lanzar la reproducción
+        
+       
+        //navigationItem.rightBarButtonItem = UIBarButtonItem
         
         
+        
+        // Titulo de la playlist seleccionada
+        //title = playlistSelected?.title
         
         // Registrar la celda
         
-        let registration = UICollectionView.CellRegistration<PlaylistDetailCollectionViewCell,Song>(cellNib: UINib(nibName: "PlaylistDetailCollectionViewCell", bundle: nil)) { cell, _, song in
+        let registration = UICollectionView.CellRegistration<PlaylistDetailCollectionViewCell,Song>(cellNib: UINib(nibName: PlaylistDetailCollectionViewCell.identifier, bundle: nil)) { cell, _, song in
             cell.configure(with: song)
         }
         
@@ -62,13 +72,14 @@ final class PlaylistDetailCollectionViewController: UICollectionViewController {
         // Asignamos la fuente de datos al collection View
         
         collectionView.dataSource = dataSource
+        collectionView.delegate = self // FIXME: No entiendo bien esto
         
         // Creacion de snapshot
         
         var snapshot = Snapshot()
         snapshot.appendSections([.playlistSongs])
-        guard let songs = songs else { return }
-        snapshot.appendItems(songs)
+        
+        snapshot.appendItems(playlistSelected.songs)
         
         //y añadirlo a la fuente de datos
         
@@ -88,7 +99,7 @@ extension PlaylistDetailCollectionViewController: UICollectionViewDelegateFlowLa
         
         let columNumber: CGFloat = 1
         let width = (collectionView.frame.size.width - 32) / columNumber
-        return CGSize(width: width, height: 70)
+        return CGSize(width: width, height: 100)
     }
     
 }

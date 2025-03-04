@@ -8,9 +8,10 @@
 import UIKit
 
 class PlaylistDetailCollectionViewCell: UICollectionViewCell {
+    
+    static let identifier = String(describing: PlaylistDetailCollectionViewCell.self)
 
     // MARK: - Outlets
-    
 
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var songDurationLabel: UILabel!

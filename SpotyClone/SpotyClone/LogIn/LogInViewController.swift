@@ -47,9 +47,9 @@ final class LogInViewController: UIViewController {
         let playerViewController = PlayerViewController()
         
         playerViewController.tabBarItem = UITabBarItem(
-            title: "Player",
-            image: UIImage(systemName: "play.rectangle"),
-            selectedImage: UIImage(systemName: "play.rectangle.fill")
+            title: "Favorites",
+            image: UIImage(systemName: "star.square"),
+            selectedImage: UIImage(systemName: "star.square.fill")
         )
         
         mainTabBar.viewControllers = [

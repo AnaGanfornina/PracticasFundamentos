@@ -80,22 +80,24 @@ extension PlaylistTableViewController {
     
     ///Función sobreescrita para dar información sobre la celda seleccionaa
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // obtener la celda seleccionada
-        guard let snapshot = dataSource?.snapshot() else { return }
+    
+        // obtener la celda seleccionada a través del índice en el datasource
+        guard let playlistSelected = dataSource?.itemIdentifier(for: indexPath) else {
+            return
+        }
         
-        let selectedCell = snapshot.itemIdentifiers(inSection: .playlists)[indexPath.row]
         
         
         // instanciar el viewController de destino y Pasar la información al viewControllerDetail
         
-        let playlistDetailCollectionView = PlaylistDetailCollectionViewController()
-        playlistDetailCollectionView.songs = selectedCell.songs
+        let playlistDetailCollectionView = PlaylistDetailCollectionViewController(playlistSelected: playlistSelected)
         
-        let playerViewController = PlayerViewController()
-        playerViewController.songs = selectedCell.songs
+        
+        
+        //playerViewController.songs = selectedCell.songs
         
         // navegar al viewControllerDetail
-        playlistDetailCollectionView.hidesBottomBarWhenPushed = false
+        //playlistDetailCollectionView.hidesBottomBarWhenPushed = false
         navigationController?.show(playlistDetailCollectionView, sender: self)
         }
     }
