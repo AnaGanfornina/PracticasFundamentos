@@ -53,13 +53,18 @@ final class LogInViewController: UIViewController {
         )
         
         mainTabBar.viewControllers = [
-            searchViewController,
-            playlistViewController,
-            playerViewController
+            UINavigationController(rootViewController: searchViewController),
+            UINavigationController(rootViewController:playlistViewController),
+            UINavigationController(rootViewController:playerViewController) // TODO: CAMBIAR POR Favoritos
         ]
         
+        // Obtengo el scene delegate de la primera escena conectada
+        let sceneDelgate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
         
-        navigationController?.setViewControllers([mainTabBar], animated: true)
+        
+        sceneDelgate?.window?.rootViewController = mainTabBar
+    
+      
     }
     
 }
