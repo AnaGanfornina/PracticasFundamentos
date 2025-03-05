@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayerViewController" customModule="SpotyClone" customModuleProvider="target">
             <connections>
+                <outlet property="artitstSongLabel" destination="3ev-4x-U80" id="cHZ-iA-fvK"/>
+                <outlet property="titleSongLabel" destination="uh1-ER-Nfm" id="Clx-O4-XRf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

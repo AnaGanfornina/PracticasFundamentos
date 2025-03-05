@@ -23,6 +23,10 @@ final class PlaylistTableViewController: UITableViewController {
     
     private var dataSource: DataSource?
     private let playlist = PlaylistRepository.allPlaylists
+    // Aquí vamos a guardar todas las playlist favortas
+    private var favoritePlaylists: [Int: Playlist] = [:]
+        
+    
     
     // MARK: - Lifecycle
     
@@ -37,7 +41,7 @@ final class PlaylistTableViewController: UITableViewController {
         
         // Configuramos el datasource
         
-        dataSource = DataSource(tableView: tableView) { tableView, indexPath, playlist in
+        dataSource = DataSource(tableView: tableView) { [weak self] tableView, indexPath, playlist in
             
             guard let cell = tableView.dequeueReusableCell(
                 withIdentifier: PlaylistTableViewCell.identifier,
@@ -45,7 +49,12 @@ final class PlaylistTableViewController: UITableViewController {
             ) as? PlaylistTableViewCell else {
                 return UITableViewCell()
             }
-            cell.configure(with: playlist)
+            
+            // Busco si la playlist que viene en el closure es favorita o no
+            let foundFavoritePlaylist = self?.favoritePlaylists[playlist.id]
+            let isFavorite = foundFavoritePlaylist != nil
+            
+            cell.configure(with: playlist, isFavorite: isFavorite)
             return cell
         }
         
@@ -62,8 +71,36 @@ final class PlaylistTableViewController: UITableViewController {
         dataSource?.apply(snapshot)
         
         tableView.separatorStyle = .none
+        
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(didReceive),
+            name: NSNotification.Name("didToggleFavorite"),
+            object: nil
+        )
     }
 
+    @objc
+    func didReceive(_ notification: Notification) {
+        guard let userInfo = notification.userInfo,
+              let playlist = userInfo["favoritePlaylist"] as? Playlist,
+              var snapshot = dataSource?.snapshot() else {
+            return
+        }
+        
+        // Si he encontrado un favorito significa que ya la tengo, por lo tanto la voy a eliminar
+        if let foundFavorite = favoritePlaylists[playlist.id] {
+            favoritePlaylists.removeValue(forKey: foundFavorite.id)
+        } else {
+            favoritePlaylists[playlist.id] = playlist
+        }
+        
+        snapshot.reloadItems([playlist]) // Le pasamos un array de objetos a refrescar
+        dataSource?.apply(snapshot)
+        
+    }
+    
     
 }
 
@@ -90,7 +127,10 @@ extension PlaylistTableViewController {
         
         // instanciar el viewController de destino y Pasar la información al viewControllerDetail
         
-        let playlistDetailCollectionView = PlaylistDetailCollectionViewController(playlistSelected: playlistSelected)
+        let playlistDetailCollectionView = PlaylistDetailCollectionViewController(
+            playlistSelected: playlistSelected,
+            isFavorite: favoritePlaylists[playlistSelected.id] != nil
+        )
         
         
         

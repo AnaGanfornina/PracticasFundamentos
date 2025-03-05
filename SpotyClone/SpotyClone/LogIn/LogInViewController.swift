@@ -42,7 +42,7 @@ final class LogInViewController: UIViewController {
             image: UIImage(systemName: "list.clipboard"),
             selectedImage: UIImage(systemName: "list.clipboard.fill")
         )
-        
+        /*
         
         let playerViewController = PlayerViewController()
         
@@ -51,11 +51,12 @@ final class LogInViewController: UIViewController {
             image: UIImage(systemName: "star.square"),
             selectedImage: UIImage(systemName: "star.square.fill")
         )
-        
+        */
         mainTabBar.viewControllers = [
             UINavigationController(rootViewController: searchViewController),
-            UINavigationController(rootViewController:playlistViewController),
-            UINavigationController(rootViewController:playerViewController) // TODO: CAMBIAR POR Favoritos
+            UINavigationController(rootViewController:playlistViewController)
+            //,
+            //UINavigationController(rootViewController:playerViewController) // TODO: CAMBIAR POR Favoritos
         ]
         
         // Obtengo el scene delegate de la primera escena conectada

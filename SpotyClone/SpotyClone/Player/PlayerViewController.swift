@@ -16,12 +16,12 @@ class PlayerViewController: UIViewController {
     
     // MARK: - Data
     
-    var songs: [Song]? // FIXME: - Como tenddría que acceder a estas variables si fueran privadas ?
+    private var  playlist: Playlist
     
     // MARK: Initializer
     
-    init() {
-        self.songs = nil
+    init(playlist: Playlist) {
+        self.playlist = playlist
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -35,7 +35,7 @@ class PlayerViewController: UIViewController {
         super.viewDidLoad()
         
         // Comenzamos la reproducción con la primera canción de la playlist
-        guard let songs = songs else { return }
+        let songs = playlist.songs
         
         titleSongLabel.text = songs.first?.title
         artitstSongLabel.text = songs.first?.artist

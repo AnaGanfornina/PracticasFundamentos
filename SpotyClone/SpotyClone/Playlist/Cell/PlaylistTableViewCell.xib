@@ -37,10 +37,19 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KIf-4P-10o">
+                                <rect key="frame" x="261" y="8" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="KUt-50-dyx"/>
+                                    <constraint firstAttribute="width" constant="36" id="QOg-vq-CHP"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
+                            <constraint firstItem="KIf-4P-10o" firstAttribute="top" secondItem="63v-Kc-Tnl" secondAttribute="top" constant="8" id="IXk-dL-edV"/>
                             <constraint firstAttribute="bottom" secondItem="C7j-c3-2d7" secondAttribute="bottom" constant="16" id="LOS-Ic-xBS"/>
+                            <constraint firstAttribute="trailing" secondItem="KIf-4P-10o" secondAttribute="trailing" constant="8" id="mRb-Db-Xt1"/>
                             <constraint firstItem="C7j-c3-2d7" firstAttribute="leading" secondItem="63v-Kc-Tnl" secondAttribute="leading" constant="16" id="rMu-sv-n7i"/>
                         </constraints>
                     </view>
@@ -54,6 +63,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="isFavoriteImage" destination="KIf-4P-10o" id="MtH-yI-Tq2"/>
                 <outlet property="playlistDescriptionLabel" destination="eQf-lA-HTP" id="zrH-2G-k3k"/>
                 <outlet property="playlistNameLabel" destination="Ki7-xM-SSK" id="onn-1j-zCb"/>
                 <outlet property="roundedBackgroundView" destination="63v-Kc-Tnl" id="27h-7U-zLY"/>

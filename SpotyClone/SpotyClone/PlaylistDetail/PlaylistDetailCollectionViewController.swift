@@ -20,16 +20,16 @@ final class PlaylistDetailCollectionViewController: UICollectionViewController {
     
     // MARK: - Data
     private var dataSource: DataSource?
-
-    
     private var playlistSelected: Playlist
+    private var isFavorite: Bool = false
     
     
     
     // MARK: - Initializer
-    init(playlistSelected: Playlist) {
+    init(playlistSelected: Playlist, isFavorite: Bool) {
         
         self.playlistSelected = playlistSelected
+        self.isFavorite = isFavorite
 
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
@@ -84,8 +84,37 @@ final class PlaylistDetailCollectionViewController: UICollectionViewController {
         //y añadirlo a la fuente de datos
         
         dataSource?.apply(snapshot)
+        
+        //Añadir el botón de favoritos en el navigationBar
+        
+        navigationItem.rightBarButtonItem  = UIBarButtonItem(
+            image: isFavorite
+            ? UIImage(systemName: "star.fill") // TODO: esto lo podemos refacrizar sacandolo a una función externa
+            : UIImage(systemName: "star"),
+            // Es como un IBActon
+            primaryAction: UIAction { [weak self] _ in
+                guard let self else { return }  // si self aún sigue en memoria continua
+                // y modifica el icono de estrella
+                self.isFavorite.toggle()
+                self.navigationItem.rightBarButtonItem?.image = self.isFavorite
+                ? UIImage(systemName: "star.fill")
+                : UIImage(systemName: "star")
+                
+                
+                
+                // Mandamos la invormacion al observer
+                NotificationCenter.default.post(
+                    name: NSNotification.Name("didToggleFavorite"), // por el canal con identificado "x" vamos a obtener la información
+                    object: self, // EL objeto que está enviando la información
+                    userInfo: ["favoritePlaylist" : playlistSelected])
+            }
+
+        )
     }
 }
+
+
+
 
 // MARK: - CollectionViewLayout
 
