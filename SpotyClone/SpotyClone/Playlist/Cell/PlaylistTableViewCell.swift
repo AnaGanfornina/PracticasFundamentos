@@ -38,8 +38,6 @@ final class PlaylistTableViewCell: UITableViewCell {
         isFavoriteImage.isHidden = !isFavorite
         
     }
-    
-    // MARK: - Button Acction
-    
+        
     
 }

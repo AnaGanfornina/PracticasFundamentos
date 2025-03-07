@@ -129,7 +129,7 @@ extension PlaylistTableViewController {
         
         let playlistDetailCollectionView = PlaylistDetailCollectionViewController(
             playlistSelected: playlistSelected,
-            isFavorite: favoritePlaylists[playlistSelected.id] != nil
+            isFavorite: favoritePlaylists[playlist.id] != nil
         )
         
         

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="PlaylistsFavoritesTableViewCell" customModule="SpotyClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zwu-aP-dmn">
+                        <rect key="frame" x="16" y="7.9999999999999964" width="358" height="58.666666666666657"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OKs-SJ-xf4">
+                                <rect key="frame" x="8" y="8" width="102.33333333333333" height="42.666666666666664"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" catalog="system" highlightedImage="play.fill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ck-Bx-NVf">
+                                        <rect key="frame" x="0.0" y="2.3333333333333321" width="50" height="38.333333333333329"/>
+                                        <color key="tintColor" name="SpotyGreen"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="7mJ-Wn-nEj"/>
+                                            <constraint firstAttribute="height" constant="50" id="o5N-rF-kkH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HLi-01-yWb">
+                                        <rect key="frame" x="58" y="0.0" width="44.333333333333343" height="42.666666666666664"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAC-eK-7El">
+                                                <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tq7-u2-W1Y">
+                                                <rect key="frame" x="0.0" y="28.333333333333332" width="44.333333333333336" height="14.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="OKs-SJ-xf4" secondAttribute="bottom" constant="8" id="PVz-fW-dWS"/>
+                            <constraint firstItem="OKs-SJ-xf4" firstAttribute="leading" secondItem="Zwu-aP-dmn" secondAttribute="leadingMargin" id="WM6-ro-SyI"/>
+                            <constraint firstItem="OKs-SJ-xf4" firstAttribute="top" secondItem="Zwu-aP-dmn" secondAttribute="top" constant="8" id="tSP-vV-Zd7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Zwu-aP-dmn" secondAttribute="trailing" constant="16" id="BXw-n4-amW"/>
+                    <constraint firstAttribute="bottom" secondItem="Zwu-aP-dmn" secondAttribute="bottom" constant="8" id="dGo-jK-L7n"/>
+                    <constraint firstItem="Zwu-aP-dmn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="nn9-Ir-aY4"/>
+                    <constraint firstItem="Zwu-aP-dmn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="wDT-Gp-Lil"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="playlistDescriptionLabel" destination="tq7-u2-W1Y" id="RUB-R1-uSP"/>
+                <outlet property="playlistNameLabel" destination="FAC-eK-7El" id="oYQ-CG-Kk9"/>
+                <outlet property="roundedBackgroundView" destination="Zwu-aP-dmn" id="7Rl-nB-yIW"/>
+            </connections>
+            <point key="canvasLocation" x="192.36641221374046" y="9.8591549295774659"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="play" catalog="system" width="120" height="128"/>
+        <image name="play.fill" catalog="system" width="120" height="128"/>
+        <namedColor name="SpotyGreen">
+            <color red="0.014000000432133675" green="0.81800001859664917" blue="0.25999999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

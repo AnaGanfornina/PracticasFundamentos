@@ -42,16 +42,15 @@ final class LogInViewController: UIViewController {
             image: UIImage(systemName: "list.clipboard"),
             selectedImage: UIImage(systemName: "list.clipboard.fill")
         )
-        /*
         
-        let playerViewController = PlayerViewController()
+        let playlistsFavoritesTableViewController = PlaylistsFavoritesTableViewController(favoritePlaylists: <#T##[Playlist]#>)
         
-        playerViewController.tabBarItem = UITabBarItem(
+        playlistsFavoritesTableViewController.tabBarItem = UITabBarItem(
             title: "Favorites",
             image: UIImage(systemName: "star.square"),
             selectedImage: UIImage(systemName: "star.square.fill")
         )
-        */
+        
         mainTabBar.viewControllers = [
             UINavigationController(rootViewController: searchViewController),
             UINavigationController(rootViewController:playlistViewController)
