@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		A1A9E4B22D7C659E00254C9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1A9E4932D7C659C00254C9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1A9E49A2D7C659C00254C9E;
+			remoteInfo = "Kata_PrácticaDragonBall";
+		};
+		A1A9E4BC2D7C659E00254C9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1A9E4932D7C659C00254C9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1A9E49A2D7C659C00254C9E;
+			remoteInfo = "Kata_PrácticaDragonBall";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1A9E49B2D7C659C00254C9E /* Kata_PrácticaDragonBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kata_PrácticaDragonBall.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A9E4B12D7C659E00254C9E /* Kata_PrácticaDragonBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kata_PrácticaDragonBallTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A9E4BB2D7C659E00254C9E /* Kata_PrácticaDragonBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kata_PrácticaDragonBallUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A1A9E4C32D7C659E00254C9E /* Exceptions for "Kata_PrácticaDragonBall" folder in "Kata_PrácticaDragonBall" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A1A9E49A2D7C659C00254C9E /* Kata_PrácticaDragonBall */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A1A9E49D2D7C659C00254C9E /* Kata_PrácticaDragonBall */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A1A9E4C32D7C659E00254C9E /* Exceptions for "Kata_PrácticaDragonBall" folder in "Kata_PrácticaDragonBall" target */,
+			);
+			path = "Kata_PrácticaDragonBall";
+			sourceTree = "<group>";
+		};
+		A1A9E4B42D7C659E00254C9E /* Kata_PrácticaDragonBallTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Kata_PrácticaDragonBallTests";
+			sourceTree = "<group>";
+		};
+		A1A9E4BE2D7C659E00254C9E /* Kata_PrácticaDragonBallUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Kata_PrácticaDragonBallUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1A9E4982D7C659C00254C9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1A9E4AE2D7C659E00254C9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1A9E4B82D7C659E00254C9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1A9E4922D7C659C00254C9E = {
+			isa = PBXGroup;
+			children = (
+				A1A9E49D2D7C659C00254C9E /* Kata_PrácticaDragonBall */,
+				A1A9E4B42D7C659E00254C9E /* Kata_PrácticaDragonBallTests */,
+				A1A9E4BE2D7C659E00254C9E /* Kata_PrácticaDragonBallUITests */,
+				A1A9E49C2D7C659C00254C9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1A9E49C2D7C659C00254C9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1A9E49B2D7C659C00254C9E /* Kata_PrácticaDragonBall.app */,
+				A1A9E4B12D7C659E00254C9E /* Kata_PrácticaDragonBallTests.xctest */,
+				A1A9E4BB2D7C659E00254C9E /* Kata_PrácticaDragonBallUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1A9E49A2D7C659C00254C9E /* Kata_PrácticaDragonBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1A9E4C42D7C659E00254C9E /* Build configuration list for PBXNativeTarget "Kata_PrácticaDragonBall" */;
+			buildPhases = (
+				A1A9E4972D7C659C00254C9E /* Sources */,
+				A1A9E4982D7C659C00254C9E /* Frameworks */,
+				A1A9E4992D7C659C00254C9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A1A9E49D2D7C659C00254C9E /* Kata_PrácticaDragonBall */,
+			);
+			name = "Kata_PrácticaDragonBall";
+			packageProductDependencies = (
+			);
+			productName = "Kata_PrácticaDragonBall";
+			productReference = A1A9E49B2D7C659C00254C9E /* Kata_PrácticaDragonBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1A9E4B02D7C659E00254C9E /* Kata_PrácticaDragonBallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1A9E4C92D7C659E00254C9E /* Build configuration list for PBXNativeTarget "Kata_PrácticaDragonBallTests" */;
+			buildPhases = (
+				A1A9E4AD2D7C659E00254C9E /* Sources */,
+				A1A9E4AE2D7C659E00254C9E /* Frameworks */,
+				A1A9E4AF2D7C659E00254C9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1A9E4B32D7C659E00254C9E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A1A9E4B42D7C659E00254C9E /* Kata_PrácticaDragonBallTests */,
+			);
+			name = "Kata_PrácticaDragonBallTests";
+			packageProductDependencies = (
+			);
+			productName = "Kata_PrácticaDragonBallTests";
+			productReference = A1A9E4B12D7C659E00254C9E /* Kata_PrácticaDragonBallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1A9E4BA2D7C659E00254C9E /* Kata_PrácticaDragonBallUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1A9E4CC2D7C659E00254C9E /* Build configuration list for PBXNativeTarget "Kata_PrácticaDragonBallUITests" */;
+			buildPhases = (
+				A1A9E4B72D7C659E00254C9E /* Sources */,
+				A1A9E4B82D7C659E00254C9E /* Frameworks */,
+				A1A9E4B92D7C659E00254C9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1A9E4BD2D7C659E00254C9E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A1A9E4BE2D7C659E00254C9E /* Kata_PrácticaDragonBallUITests */,
+			);
+			name = "Kata_PrácticaDragonBallUITests";
+			packageProductDependencies = (
+			);
+			productName = "Kata_PrácticaDragonBallUITests";
+			productReference = A1A9E4BB2D7C659E00254C9E /* Kata_PrácticaDragonBallUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1A9E4932D7C659C00254C9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					A1A9E49A2D7C659C00254C9E = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A1A9E4B02D7C659E00254C9E = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A1A9E49A2D7C659C00254C9E;
+					};
+					A1A9E4BA2D7C659E00254C9E = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A1A9E49A2D7C659C00254C9E;
+					};
+				};
+			};
+			buildConfigurationList = A1A9E4962D7C659C00254C9E /* Build configuration list for PBXProject "Kata_PrácticaDragonBall" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1A9E4922D7C659C00254C9E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A1A9E49C2D7C659C00254C9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1A9E49A2D7C659C00254C9E /* Kata_PrácticaDragonBall */,
+				A1A9E4B02D7C659E00254C9E /* Kata_PrácticaDragonBallTests */,
+				A1A9E4BA2D7C659E00254C9E /* Kata_PrácticaDragonBallUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1A9E4992D7C659C00254C9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1A9E4AF2D7C659E00254C9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1A9E4B92D7C659E00254C9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1A9E4972D7C659C00254C9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1A9E4AD2D7C659E00254C9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1A9E4B72D7C659E00254C9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1A9E4B32D7C659E00254C9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1A9E49A2D7C659C00254C9E /* Kata_PrácticaDragonBall */;
+			targetProxy = A1A9E4B22D7C659E00254C9E /* PBXContainerItemProxy */;
+		};
+		A1A9E4BD2D7C659E00254C9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1A9E49A2D7C659C00254C9E /* Kata_PrácticaDragonBall */;
+			targetProxy = A1A9E4BC2D7C659E00254C9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A1A9E4C52D7C659E00254C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DRKH5MTLPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kata_PrácticaDragonBall/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anaganfornina.Kata-Pra-cticaDragonBall";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1A9E4C62D7C659E00254C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DRKH5MTLPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kata_PrácticaDragonBall/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anaganfornina.Kata-Pra-cticaDragonBall";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A1A9E4C72D7C659E00254C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1A9E4C82D7C659E00254C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1A9E4CA2D7C659E00254C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DRKH5MTLPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anaganfornina.Kata-Pra-cticaDragonBallTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kata_PrácticaDragonBall.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kata_PrácticaDragonBall";
+			};
+			name = Debug;
+		};
+		A1A9E4CB2D7C659E00254C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DRKH5MTLPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anaganfornina.Kata-Pra-cticaDragonBallTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kata_PrácticaDragonBall.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kata_PrácticaDragonBall";
+			};
+			name = Release;
+		};
+		A1A9E4CD2D7C659E00254C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DRKH5MTLPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anaganfornina.Kata-Pra-cticaDragonBallUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kata_PrácticaDragonBall";
+			};
+			name = Debug;
+		};
+		A1A9E4CE2D7C659E00254C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DRKH5MTLPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anaganfornina.Kata-Pra-cticaDragonBallUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kata_PrácticaDragonBall";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1A9E4962D7C659C00254C9E /* Build configuration list for PBXProject "Kata_PrácticaDragonBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1A9E4C72D7C659E00254C9E /* Debug */,
+				A1A9E4C82D7C659E00254C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1A9E4C42D7C659E00254C9E /* Build configuration list for PBXNativeTarget "Kata_PrácticaDragonBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1A9E4C52D7C659E00254C9E /* Debug */,
+				A1A9E4C62D7C659E00254C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1A9E4C92D7C659E00254C9E /* Build configuration list for PBXNativeTarget "Kata_PrácticaDragonBallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1A9E4CA2D7C659E00254C9E /* Debug */,
+				A1A9E4CB2D7C659E00254C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1A9E4CC2D7C659E00254C9E /* Build configuration list for PBXNativeTarget "Kata_PrácticaDragonBallUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1A9E4CD2D7C659E00254C9E /* Debug */,
+				A1A9E4CE2D7C659E00254C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1A9E4932D7C659C00254C9E /* Project object */;
+}
