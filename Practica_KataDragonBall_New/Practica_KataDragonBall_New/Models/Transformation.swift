@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+
+struct Transformation {
+    let name: String
+    let hero: Hero
+    let id: String
+    let photo: String
+    let description: String
+}
